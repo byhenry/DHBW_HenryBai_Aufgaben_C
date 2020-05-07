@@ -1,3 +1,4 @@
+//Henry Bai
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -27,8 +28,10 @@ int main(){
     } 
     
     printf("Values of matrix:\n");
-    for(int i = 0; i < len; i++){
-        for(int j = 0; j < len; j++) printf("  %d", mat[i, j]);
+    for(int x = 0; x < len; x++){
+        for(int y = 0; y < len; y++){
+            printf("  %d", mat[x, y]);
+        }
         printf("\n");
     }
     return 0;
