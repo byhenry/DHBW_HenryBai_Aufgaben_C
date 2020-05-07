@@ -4,7 +4,8 @@
 
 int main(){
 
-    int len = 5;
+    int lenx = 5;
+    int leny = 5;
 
     /*double* vec = malloc(sizeof(double) * len);
 
@@ -22,14 +23,14 @@ int main(){
     for(int i = 0; i < len; i++) printf("mem(ptr[i]) = %d\n", &vec[i]);
 */
 
-    double** mat = malloc(sizeof(double) * len);
-    for(int i = 0; i < len; i++){
-        mat[i] = malloc(sizeof(double) * len);
-    } 
+    double** mat = malloc(sizeof(double) * lenx);
+    for(int i = 0; i < lenx; i++){
+        mat[i] = malloc(sizeof(double) * leny);
+    }
     
     printf("Values of matrix:\n");
-    for(int x = 0; x < len; x++){
-        for(int y = 0; y < len; y++){
+    for(int x = 0; x < lenx; x++){
+        for(int y = 0; y < leny; y++){
             printf("  %d", mat[x, y]);
         }
         printf("\n");
