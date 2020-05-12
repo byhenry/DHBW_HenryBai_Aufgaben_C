@@ -23,9 +23,16 @@ do{
     values[0][row] = row;
     values[1][row] = values[1][row - 1] - func(values[1][row - 1]) / der(values[1][row - 1]);
     values[2][row] = func(values[1][row]);
-    printf("ROW: %lf\tX: %lf\tY:%lf\n", values[0][row], values[1][row], values[2][row]);
+    printf("ROW: %lf\tX: %lf\tY:%lf\n", values[0][row], values[1][row], values[2][row]); // JW-2020-05-12 ausgabe int as %lf -1
 
 } while (row < len && sqrt(pow(values[2][row], 2)) > 0.0000000000000001);
 
 
 } 
+
+/*
+JW-2020-05-12:
+--------------
+> nice implementation! 
+> consider abort criteria to be variable
+/*
