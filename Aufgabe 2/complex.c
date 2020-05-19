@@ -2,8 +2,8 @@
 #include <stdlib.h>
 #include <math.h>
 
-typedef struct{
-    double re;
+typedef struct{         //ich hab lange gesucht aber nicht gefunden, wie man es richtig definiert, 
+    double re;          //ob nur in der h-Datei oder nur in der c-Datei und das einzige das bei mir funktioniert hat ist die Lösung!
     double im;
 }complex_number;
 
