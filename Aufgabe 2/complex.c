@@ -5,7 +5,7 @@
 typedef struct{         //ich hab lange gesucht aber nicht gefunden, wie man es richtig definiert, 
     double re;          //ob nur in der h-Datei oder nur in der c-Datei und das einzige das bei mir funktioniert hat ist die Lösung!
     double im;
-}complex_number;
+}complex_number; // JW 2020-05-20: passt doch :-)
 
 complex_number com_sum(complex_number one, complex_number two){
     complex_number res;
@@ -35,7 +35,7 @@ complex_number com_div(complex_number one, complex_number two){
     return res;
 }
 
-void print_comk(complex_number numb){
+void print_comk(complex_number numb){ 
     printf("\n*RESULT: \n\tz = %.3lf + %.3lfi\n", numb.re, numb.im);
 }
 

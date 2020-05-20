@@ -20,7 +20,7 @@ int main(){
     printf("*****************COMPLEX NUMBERS CALCULATOR******************\n");
     do{
         printf("*ENTER FIRST NUMBER:\t\t\t\t\t\t[ a+bi / a+-bi ]\n");
-        scanf("%s", &entry1);
+        scanf("%s", &entry1);// JW 2020-05-20: this is technically wrong but will be handled by the compiler. please use >&entry1[0]< or >entry1< same in line 39: -1Pkt
 
         first_num.re = atof(strtok(entry1, delimiter));
         first_num.im = atof(strtok(NULL, delimiter));
@@ -60,6 +60,13 @@ int main(){
         scanf("%c", &buffer);
         scanf("%c", &again);
 
-    }while(!(again == 'n' || again == 'N'));
+    }while(!(again == 'n' || again == 'N')); // nice :-)
     return 0;
 }
+/*
+JW-2020-05-20:
+--------------
+> well done! (11/10) 
+> scanf char array line 23&29: -1Pkt
+> Bonus: +2Pkt
+*/
