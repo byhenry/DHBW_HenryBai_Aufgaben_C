@@ -20,13 +20,13 @@ int main(){
     printf("*****************COMPLEX NUMBERS CALCULATOR******************\n");
     do{
         printf("*ENTER FIRST NUMBER:\t\t\t\t\t\t[ a+bi / a+-bi ]\n");
-        scanf("%s", &entry1);// JW 2020-05-20: this is technically wrong but will be handled by the compiler. please use >&entry1[0]< or >entry1< same in line 39: -1Pkt
+        scanf("%s", entry1);//&entry1 JW 2020-05-20: this is technically wrong but will be handled by the compiler. please use >&entry1[0]< or >entry1< same in line 39: -1Pkt
 
         first_num.re = atof(strtok(entry1, delimiter));
         first_num.im = atof(strtok(NULL, delimiter));
 
         printf("*ENTER SECOND NUMBER:\t\t\t\t\t\t[ a+bi / a+-bi ]\n");
-        scanf("%s", &entry2);
+        scanf("%s", entry2);
 
         second_num.re = atof(strtok(entry2, delimiter));
         second_num.im = atof(strtok(NULL, delimiter));
@@ -47,13 +47,11 @@ int main(){
         printf("*karthesisch / euler / polar:\t\t\t\t\t[ k / e / p ]\n");
         do{
             scanf("%c", &show);
-            
             switch(show){
                 case 'k': print_comk(res); stop = 1; break;
                 case 'e': print_come(res); stop = 1; break;
                 case 'p': print_comp(res); stop = 1; break;
             }
-
         }while(stop == 0);
 
         printf("\n*AGAIN:\t\t\t\t\t\t\t\t[ n / j ]\n");
