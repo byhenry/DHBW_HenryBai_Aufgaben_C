@@ -28,7 +28,6 @@ int main(){
 
     int FLAG = 1;
     while (FLAG){
-    
         printf("1... print list\n");
         printf("2... add element\n");
         printf("3... delete element\n");

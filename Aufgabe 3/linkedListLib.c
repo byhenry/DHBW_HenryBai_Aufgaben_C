@@ -137,8 +137,15 @@ void loadList(listElement *start){
 }
 
 void exitFcn(listElement *start){
+    int saveFlag = 0;
+    
+    printf("do you want to save the current list?\n");
+    printf("[1] ... yes\n");
+    printf("[0] ... no\n");
+    scanf("%d", &saveFlag);
 
-    printf("\n>> exitFcn fcn is tbd.\n\n");
+    if(saveFlag == 1) saveList(start);
+    system(cls);
 
 }
 
