@@ -291,3 +291,8 @@ void stringToLower(char *string) {
 		}
 	}
 }
+/*
+JW-2020-06-05:
+--------------
+> well done (10/10) 
+*/
