@@ -111,3 +111,9 @@ int main(){
     //pclose(gnuplotPipe); wenn ich versuche die Pipe am ende zu schließen, dann wird das 2. Diagramm erst gezeigt, wenn ich das erste schließe. Hat es außerdem einen Grund, warum du die nicht schließt am Ende?
 return 0;
 }
+/*
+JW-2020-06-11:
+--------------
+> well done (11/10) !
+> bouncing ball: +1Pkt
+*/
