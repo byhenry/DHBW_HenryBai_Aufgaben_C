@@ -22,6 +22,5 @@ printf("\%d \textbackslash n", i);
 i -= 7;
 }
 
-
 h)
 arr = {1, 3, 5, 0, 9};
